@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(106,90,205);
+    background-color: rgb(89, 95, 214);
     padding: 0;
     margin: 0;
 }
@@ -13,6 +13,7 @@ h1 {
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 main {
@@ -23,7 +24,7 @@ main {
     border: 2px solid whitesmoke;
     width: 600px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 form {
@@ -31,6 +32,26 @@ form {
     flex-direction: column;
 }
 
+textarea {
+    resize: none;
+}
+
 textarea::placeholder {
     color: black;
 }
+
+.counter-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter-div p {
+    color: aliceblue;
+}
+
+/*
+.input-textarea:focus {
+    border-color: #dd0808;
+    outline: none;
+}
+*/

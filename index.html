@@ -7,21 +7,19 @@
     <title>Калькулятор</title>
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-    <h1>Калькулятор символов: подсчет символов онлайн</h1>
-        <form class="form" action="">
-        <label class="input-label" for="story">Введите текст в поле ниже и нажмите на кнопку "Посчитать":</label>
-        <textarea class="input-textarea" id="story" name="story" rows="4" cols="20" placeholder="Напишите или скопируйте сюда текст"></textarea>
-        </form>
-    </main>
-    <footer>
-        <p>Тестовый текст для ГитХаба</p>
-    </footer>
-    
-
-    
+<main>
+    <form>
+        <h1>Калькулятор символов</h1>
+        <label class="input-label" for="story">Введите текст и нажмите на кнопку «Посчитать»:</label>
+        <textarea autofocus class="input-textarea" id="story" name="textarea" rows="20" cols="20" placeholder="Напишите или скопируйте сюда текст"></textarea>
+        <div class="counter-div">
+            <div class="symbol-text">
+                <p>Количество символов без пробелов: <span id="result">0</span></p>
+                <p>Количество символов с пробелами: <span id="result">0</span></p>
+            </div>
+            <button class="button" name="button-counter">Посчитать</button>
+        </div>
+    </form>
+</main>    
 </body>
 </html>
