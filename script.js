@@ -1,3 +1,35 @@
+//получаем форму ввода текста
+let formInputText = document.getElementById("form-input-text");
+
+// поля вывода количества символов в span, под формой
+let result = document.getElementById("result");
+let resultWithoutSymbols = document.getElementById("result-wth-symbols"); 
+
+// Вот так мы получаем данные из textarea
+let contentForm = formInputText.value;
+
+result.textContent = contentForm.length; 
+
+/*
+
+contentForm.addEventListener('input', function (event) {
+    result.textContent = contentForm.length; 
+}); 
+
+
+const element = document.querySelector('button')
+
+element.addEventListener('click', function (event) {
+  console.log('Произошло событие', event.type)
+})
+
+*/
+
+
+//команды для проверки и отладки 
+console.log(formInputText); 
+console.log(contentForm); 
+console.log('Проверка связи'); 
 // нужно использовать метод trim для подсчета количества символов без пробелов 
 // нужно использовать свойство length для подсчета количества символов с пробелами или без пробелов 
 /* 
