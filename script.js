@@ -1,35 +1,26 @@
 //получаем форму ввода текста
-let formInputText = document.getElementById("form-input-text");
+let formInputText = document.querySelector('.input-textarea');
 
 // поля вывода количества символов в span, под формой
 let result = document.getElementById("result");
-let resultWithoutSymbols = document.getElementById("result-wth-symbols"); 
+let resultWthSymbols = document.getElementById("result-wth-symbols"); 
 
-// Вот так мы получаем данные из textarea
-let contentForm = formInputText.value;
+//функция для проверки работы кнопки
+let button = document.querySelector('button'); 
+button.addEventListener('click', (event) => alert('Кнопка работает'))
 
-result.textContent = contentForm.length; 
-
-/*
-
-contentForm.addEventListener('input', function (event) {
-    result.textContent = contentForm.length; 
-}); 
-
-
-const element = document.querySelector('button')
-
-element.addEventListener('click', function (event) {
-  console.log('Произошло событие', event.type)
-})
-
-*/
-
+//функция для подсчета символов, выводит в span  
+formInputText.addEventListener('input', (event) => {
+  //счетчик в span для кол-ва символов с пробелами
+  let lengthOfText = formInputText.value; 
+  result.textContent = lengthOfText.length;
+  //счетчик в span для кол-ва символов без пробелов
+  let textWthSymbols = formInputText.value;
+  let trimmedText = textWthSymbols.trim()
+  resultWthSymbols.textContent = trimmedText.length;
+});
 
 //команды для проверки и отладки 
-console.log(formInputText); 
-console.log(contentForm); 
-console.log('Проверка связи'); 
 // нужно использовать метод trim для подсчета количества символов без пробелов 
 // нужно использовать свойство length для подсчета количества символов с пробелами или без пробелов 
 /* 

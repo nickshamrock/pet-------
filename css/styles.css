@@ -49,6 +49,10 @@ textarea::placeholder {
     color: aliceblue;
 }
 
+.button {
+    margin-top: 10px;
+}
+
 /*
 .input-textarea:focus {
     border-color: #dd0808;
