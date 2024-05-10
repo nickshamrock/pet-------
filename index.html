@@ -11,13 +11,18 @@
     <form>
         <h1>Калькулятор символов</h1>
         <label class="input-label" for="form-input-text">Введите текст и нажмите на кнопку «Посчитать»:</label>
-        <textarea autofocus class="input-textarea" id="form-input-text" name="textarea" rows="20" cols="20" placeholder="Напишите или скопируйте сюда текст"></textarea>
+        <textarea autofocus class="input-textarea" id="form-input-text" name="textarea" rows="15" cols="20" placeholder="Напишите или скопируйте сюда текст"></textarea>
         <div class="counter-div">
             <div class="symbol-text">
-                <p>Количество символов c пробелами: <span id="result">0</span></p>
+                <p>Cтавка: <input id="inputForPrice" type="number" class="input-form" value="100" min="0" placeholder="Введите сумму"> ₽ за 1 000 символов без пробелов</p>
+                <p>Итоговая сумма: <span id="count">кликните на "Посчитать"</span></p>
                 <p>Количество символов без пробелов: <span id="result-wth-symbols">0</span></p>
+                <p>Количество символов c пробелами: <span id="result">0</span></p>
             </div>
-            <button class="button" name="button-counter">Посчитать</button>
+            <div class="buttons">
+                <button class="button" name="button-counter">Посчитать</button>
+                <button class="button" name="clear-form">Очистить</button>
+            </div>
         </div>
     </form>
 </main> 

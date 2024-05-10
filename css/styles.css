@@ -24,7 +24,7 @@ main {
     border: 2px solid whitesmoke;
     width: 600px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 form {
@@ -43,14 +43,31 @@ textarea::placeholder {
 .counter-div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .counter-div p {
     color: aliceblue;
 }
 
+.symbol-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .button {
-    margin-top: 10px;
+    height: 80px;
+}
+
+.input-form {
+    width: 100px;
 }
 
 /*
