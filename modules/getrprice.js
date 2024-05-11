@@ -1,4 +1,4 @@
-import { srting } from "./script.js";
+import { srting } from "../script.js";
 
 
 let buttonCount = document.getElementById('button-count'); 
