@@ -1,9 +1,7 @@
-let srting = 'Привет, я из sessionStorage!'  
-
 let formInputText = document.querySelector('.input-textarea');
 let result = document.getElementById('result');
 let resultWthSymbols = document.getElementById('result-wth-symbols');
-//в переменную ниже записывается количество символов без пробелов 
+//в переменную ниже записывается количество символов без пробелов из функции-обработчика ниже, используется в файле getprice.js 
 let countOfSymbols;
 
 formInputText.addEventListener('input', function (event) {
