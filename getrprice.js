@@ -4,7 +4,7 @@ let priceForThousandSymbols = document.getElementById('price-for-thousand-symbol
 
 buttonCount.addEventListener('click', function (event) {
   let price = (countOfSymbols / 1000) * priceForThousandSymbols.value;
-  priceForText.textContent = price;
+  priceForText.textContent = price.toFixed(2);
 })
 
 
