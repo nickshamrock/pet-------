@@ -1,4 +1,4 @@
-export let srting = 'Привет, я из sessionStorage!'  
+let srting = 'Привет, я из sessionStorage!'  
 
 let formInputText = document.querySelector('.input-textarea');
 let result = document.getElementById('result');
