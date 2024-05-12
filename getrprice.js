@@ -5,6 +5,11 @@ let priceForThousandSymbols = document.getElementById('price-for-thousand-symbol
 buttonCount.addEventListener('click', function (event) {
   let price = (countOfSymbols/*переменная из app.js*/ / 1000) * priceForThousandSymbols.value;
   priceForText.textContent = price.toFixed(2) + ' руб.';
+
+  if (formInputText.value == '') {
+    priceForText.textContent = 'сначала введите текст!'
+  }
+
 })
 
 
