@@ -13,22 +13,23 @@
             <h1>Калькулятор копирайтера</h1>
             <p>Введите текст и нажмите на «Посчитать»:</p>
         </label>
-        <textarea autofocus class="input-textarea" id="form-input-text" name="textarea" rows="15" cols="20" placeholder="Напишите или скопируйте сюда текст"></textarea>
+        <textarea autofocus class="input-textarea" id="form-input-text" name="textarea" rows="15" cols="20" placeholder="Напишите или скопируйте сюда текст..."></textarea>
         <div class="counter-div">
             <div class="symbol-text">
-                <p>Cтавка: <input id="price-for-thousand-symbols" type="number" class="input-form" min="0" value="100" placeholder="Введите сумму" required> ₽ за 1 000 символов без пробелов</p>
+                <p>Cтавка: <input name="input-name" id="price-for-thousand-symbols" type="number" class="input-form" min="0" value="100" placeholder="Введите сумму" required autocomplete="off"/> ₽ за 1 000 символов без пробелов</p>
                 <p>Итоговая сумма: <span id="price-for-text">кликните на «Посчитать»</span></p>
                 <p>Количество символов без пробелов: <span id="result-wth-symbols">0</span></p>
                 <p>Количество символов c пробелами: <span id="result">0</span></p>
             </div>
             <div class="buttons">
-                <button class="button" name="button-counter" id="button-count" type="button">Посчитать</button>
-                <button class="button" name="clear-form" id="button-clear" type="reset">Очистить</button>
+                <button class="button-first-count" name="button-counter" id="button-count" type="button">Посчитать</button>
+                <button class="button-second-clear" name="clear-form" id="button-clear" type="reset">Очистить</button>
             </div>
         </div>
     </form>
 </main> 
 <script src="app.js"></script>
-<script src="getrprice.js"></script>   
+<script src="getrprice.js"></script>
+<script src="clearformandsymbols.js"></script>   
 </body>
 </html>

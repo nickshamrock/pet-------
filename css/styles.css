@@ -2,7 +2,7 @@ body {
     background-color: rgb(89, 95, 214);
     padding: 0;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -38,8 +38,15 @@ textarea {
     resize: none;
 }
 
-textarea::placeholder {
+textarea::-webkit-input-placeholder  { 
     color: black;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.5; -moz-opacity: 0.5; filter:alpha(opacity=5); 
+}
+textarea::-moz-placeholder { 
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.5; -moz-opacity: 0.5; filter:alpha(opacity=5); 
 }
 
 .counter-div {
@@ -64,10 +71,106 @@ textarea::placeholder {
     gap: 20px;
 }
 
-.buttons .button {
+.button-first-count {
     height: 80px;
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 25px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: 1px solid aliceblue;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+	background-color: aliceblue;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+
+.button-first-count:focus-visible {
+	border: 1px solid  rgb(89, 95, 214);
+	outline: none;
+}
+.button-first-count:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgba(31, 204, 100, 0.8), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.button-first-count:active {
+	background-color:rgba(31, 204, 100);
+}
+.button-first-count:disabled {
+	background-color: aliceblue;
+	border-color: aliceblue;
+	color: black;
+	cursor: not-allowed;
+}
+
+.button-second-clear {
+    height: 80px;
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 25px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: 1px solid aliceblue;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+	background-color: aliceblue;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+
+.button-second-clear:focus-visible {
+	border: 1px solid  rgb(89, 95, 214);
+	outline: none;
+}
+.button-second-clear:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgba(238, 31, 31, 0.8), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.button-second-clear:active {
+	background-color:rgb(239, 38, 38);
+}
+.button-second-clear:disabled {
+	background-color: aliceblue;
+	border-color: aliceblue;
+	color: black;
+	cursor: not-allowed;
 }
 
 .input-form {
     width: 100px;
 }
+
+.input-form::-webkit-input-placeholder  { 
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.5; -moz-opacity: 0.5; filter:alpha(opacity=5); 
+}
+
+.input-form::-moz-placeholder { 
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.5; -moz-opacity: 0.5; filter:alpha(opacity=5); 
+}
+
+
