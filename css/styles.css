@@ -55,20 +55,21 @@ textarea::-moz-placeholder {
     align-items: center;
 }
 
-.counter-div .symbol-text {
+.symbol-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.counter-div .symbol-text p {
+.symbol-text p {
     color: aliceblue;
 }
 
-.counter-div .buttons {
+.buttons {
     display: flex;
     flex-direction: column;
     gap: 20px;
+	margin-top: 50px;
 }
 
 .button-first-count {
