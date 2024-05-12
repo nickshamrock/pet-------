@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Калькулятор</title>
+    <title>Калькулятор копирайтера</title>
 </head>
 <body>
 <main>
     <form name="calculator-of-symbols">
-        <h1>Калькулятор символов</h1>
-        <label class="input-label" for="form-input-text">Введите текст и нажмите на кнопку «Посчитать»:</label>
+        <label class="input-label" for="form-input-text">
+            <h1>Калькулятор копирайтера</h1>
+            <p>Введите текст и нажмите на «Посчитать»:</p>
+        </label>
         <textarea autofocus class="input-textarea" id="form-input-text" name="textarea" rows="15" cols="20" placeholder="Напишите или скопируйте сюда текст"></textarea>
         <div class="counter-div">
             <div class="symbol-text">
                 <p>Cтавка: <input id="price-for-thousand-symbols" type="number" class="input-form" min="0" value="100" placeholder="Введите сумму" required> ₽ за 1 000 символов без пробелов</p>
-                <p>Итоговая сумма: <span id="price-for-text">кликните на "Посчитать"</span> руб.</p>
+                <p>Итоговая сумма: <span id="price-for-text">кликните на «Посчитать»</span></p>
                 <p>Количество символов без пробелов: <span id="result-wth-symbols">0</span></p>
                 <p>Количество символов c пробелами: <span id="result">0</span></p>
             </div>

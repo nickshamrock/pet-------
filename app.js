@@ -10,5 +10,7 @@ formInputText.addEventListener('input', function (event) {
   resultWthSymbols.textContent = lengthOfText.replace(/\s+/gu, '').length;
   //записываем в переменную countOfSymbols количество символов без пробелов
   countOfSymbols = lengthOfText.replace(/\s+/gu, '').length; 
+  //добавим текст-заглушку в цену, если пользователь изменит текст после подсчета
+  priceForText.textContent = 'кликните на "Посчитать"'; 
 });
 
