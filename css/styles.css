@@ -1,3 +1,7 @@
+* {
+	outline: 4px solid green !important;
+}
+
 body {
     background-color: rgb(89, 95, 214);
     padding: 0;
@@ -36,6 +40,7 @@ form {
 
 textarea {
     resize: none;
+	overflow: auto;
 }
 
 textarea::-webkit-input-placeholder  { 
